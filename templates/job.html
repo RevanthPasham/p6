@@ -1,0 +1,25 @@
+=
+
+<div>
+     {% include 'nav.html' %}
+    <title>{{ job.title }}</title>  <!-- fix tag spelling -->
+
+</div>
+
+
+<div>
+
+      <h3>Title</h3>
+    <p>{{ job.title }}</p>          <!-- use <p> not <p3> -->
+    <h3>Location</h3>
+    <p>{{ job.location }}</p>
+    <h3>Salary</h3>
+    <p>{{ job.currency }} {{ job.salary }}</p>
+    <h3>Responsibilities</h3>
+    <p>{{ job.resposibilities }}</p>  <!-- consider fixing spelling to 'responsibilities' in DB and code -->
+    <h3>Requirements</h3>
+    <p>{{ job.requiremenst }}</p>     <!-- consider fixing spelling to 'requirements' in DB and code -->
+    {% include 'application.html' %}
+
+
+</div>
